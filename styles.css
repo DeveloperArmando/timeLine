@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 50px;
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+}
+
+.h2 {
+    margin-bottom: 5px;
+}
+
+.box-bigger {
+    display: flex;
+}
+
+.box {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 120%;
+    background: red;
+    left: -10px;
+}
+
+.icon {
+    z-index: 2;
+    margin-top: 6px;
+}
+
